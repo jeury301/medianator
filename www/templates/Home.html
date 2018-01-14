@@ -1,0 +1,150 @@
+<ion-view view-title="Set Checkpoint" cache-view="false">
+	<ion-header-bar class="bar-dark">
+		  <div class="title">Medianator</div>
+	</ion-header-bar>
+	<ion-content  class="content" has-header="true" padding="true">
+
+		<div class="list">
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">Pantalla</span>
+
+				<div class="row">
+					<div class="col">
+						<input type="text" style="font-weight: bold; font-size: 180%; color: purple;" disabled ng-model="user_input">
+					</div>
+				</div>
+			</label>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<button class="button button-assertive" ng-click="clear()">
+					Resetear
+				</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<button class="button button-block button-calm" ng-click="enter()">
+					Entrar
+				</button>
+			</div>
+
+			<div class="col">
+				<button class="button button-block button-balanced" ng-click="mean()">
+					Mediana
+				</button>
+			</div>
+		</div>
+
+		
+
+		<div style="position: relative; ">
+
+			<div class="row" >
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(7)">
+						7
+					</button>
+				</div>
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(8)">
+						8
+					</button>
+				</div>
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(9)">
+						9
+					</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(4)">
+						4
+					</button>
+				</div>
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(5)">
+						5
+					</button>
+				</div>
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(6)">
+						6
+					</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(1)">
+						1
+					</button>
+				</div>
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(2)">
+						2
+					</button>
+				</div>
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(3)">
+						3
+					</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append(0)">
+						0
+					</button>
+				</div>
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append('.')">
+						.
+					</button>
+				</div>
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="append('-')">
+						(-)
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</ion-content>
+	
+  
+</ion-footer-bar>
+</ion-view>
+
+<style>
+
+	.content {
+		background-color: #E8E8E8;
+	}
+
+	.content > .scroll {
+		height: 100%;
+	}
+	.content > .scroll > .mydiv {
+		height: 100%;
+	}
+
+	#footer {
+		position: absolute;
+		bottom: 10px;
+		background-color: red;    
+		height: 20px;
+		left: 10px;
+		right: 10px;
+	}
+</style>
+
+
+
+
